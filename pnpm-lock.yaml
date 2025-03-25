@@ -14,6 +14,9 @@ importers:
       '@ai-sdk/openai':
         specifier: 1.1.9
         version: 1.1.9(zod@3.23.8)
+      '@ai-sdk/togetherai':
+        specifier: ^0.2.1
+        version: 0.2.1(zod@3.23.8)
       '@codemirror/lang-javascript':
         specifier: ^6.2.2
         version: 6.2.2
@@ -122,6 +125,9 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@19.0.0-rc-45804af1-20241021(react@19.0.0-rc-45804af1-20241021))(react@19.0.0-rc-45804af1-20241021)
+      ollama-ai-provider:
+        specifier: ^1.2.0
+        version: 1.2.0(zod@3.23.8)
       orderedmap:
         specifier: ^2.1.1
         version: 2.1.1
@@ -264,6 +270,12 @@ packages:
     peerDependencies:
       zod: ^3.0.0
 
+  '@ai-sdk/openai-compatible@0.2.1':
+    resolution: {integrity: sha512-7vQePiL/+BcbWf3qq5p+Ym+VH3DLY7cuwHucRtcuYSALrxtltKvVBlPr3vU3R9WdxcLyNwykW7UkVE2UpNp5JQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.0.0
+
   '@ai-sdk/openai@1.1.9':
     resolution: {integrity: sha512-t/CpC4TLipdbgBJTMX/otzzqzCMBSPQwUOkYPGbT/jyuC86F+YO9o+LS0Ty2pGUE1kyT+B3WmJ318B16ZCg4hw==}
     engines: {node: '>=18'}
@@ -288,12 +300,22 @@ packages:
       zod:
         optional: true
 
+  '@ai-sdk/provider-utils@2.2.1':
+    resolution: {integrity: sha512-BuExLp+NcpwsAVj1F4bgJuQkSqO/+roV9wM7RdIO+NVrcT8RBUTdXzf5arHt5T58VpK7bZyB2V9qigjaPHE+Dg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.23.8
+
   '@ai-sdk/provider@1.0.7':
     resolution: {integrity: sha512-q1PJEZ0qD9rVR+8JFEd01/QM++csMT5UVwYXSN2u54BrVw/D8TZLTeg2FEfKK00DgAx0UtWd8XOhhwITP9BT5g==}
     engines: {node: '>=18'}
 
   '@ai-sdk/provider@1.0.8':
     resolution: {integrity: sha512-f9jSYwKMdXvm44Dmab1vUBnfCDSFfI5rOtvV1W9oKB7WYHR5dGvCC6x68Mk3NUfrdmNoMVHGoh6JT9HCVMlMow==}
+    engines: {node: '>=18'}
+
+  '@ai-sdk/provider@1.1.0':
+    resolution: {integrity: sha512-0M+qjp+clUD0R1E5eWQFhxEvWLNaOtGQRUaBn8CUABnSKredagq92hUS9VjOzGsTm37xLfpaxl97AVtbeOsHew==}
     engines: {node: '>=18'}
 
   '@ai-sdk/react@1.1.17':
@@ -307,6 +329,12 @@ packages:
         optional: true
       zod:
         optional: true
+
+  '@ai-sdk/togetherai@0.2.1':
+    resolution: {integrity: sha512-dcXt+rjA4MA3v/roH3UDX6hQJMoiuPREb0LrpiZypMyzre4v7N8VXXXspbRX+x1918/2Y7UykN+CqWhI0aWAZQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.0.0
 
   '@ai-sdk/ui-utils@1.1.15':
     resolution: {integrity: sha512-NsV/3CMmjc4m53snzRdtZM6teTQUXIKi8u0Kf7GBruSzaMSuZ4DWaAAlUshhR3p2FpZgtsogW+vYG1/rXsGu+Q==}
@@ -3022,6 +3050,15 @@ packages:
   obuf@1.1.2:
     resolution: {integrity: sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==}
 
+  ollama-ai-provider@1.2.0:
+    resolution: {integrity: sha512-jTNFruwe3O/ruJeppI/quoOUxG7NA6blG3ZyQj3lei4+NnJo7bi3eIRWqlVpRlu/mbzbFXeJSBuYQWF6pzGKww==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.0.0
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
@@ -3052,6 +3089,9 @@ packages:
 
   parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
+
+  partial-json@0.1.7:
+    resolution: {integrity: sha512-Njv/59hHaokb/hRUjce3Hdv12wd60MtM9Z5Olmn+nehe0QDAsRtRbJPvJ0Z91TusF0SuZRIvnM+S4l6EIP8leA==}
 
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
@@ -3800,6 +3840,12 @@ snapshots:
       '@ai-sdk/provider-utils': 2.1.6(zod@3.23.8)
       zod: 3.23.8
 
+  '@ai-sdk/openai-compatible@0.2.1(zod@3.23.8)':
+    dependencies:
+      '@ai-sdk/provider': 1.1.0
+      '@ai-sdk/provider-utils': 2.2.1(zod@3.23.8)
+      zod: 3.23.8
+
   '@ai-sdk/openai@1.1.9(zod@3.23.8)':
     dependencies:
       '@ai-sdk/provider': 1.0.7
@@ -3824,11 +3870,22 @@ snapshots:
     optionalDependencies:
       zod: 3.23.8
 
+  '@ai-sdk/provider-utils@2.2.1(zod@3.23.8)':
+    dependencies:
+      '@ai-sdk/provider': 1.1.0
+      nanoid: 3.3.8
+      secure-json-parse: 2.7.0
+      zod: 3.23.8
+
   '@ai-sdk/provider@1.0.7':
     dependencies:
       json-schema: 0.4.0
 
   '@ai-sdk/provider@1.0.8':
+    dependencies:
+      json-schema: 0.4.0
+
+  '@ai-sdk/provider@1.1.0':
     dependencies:
       json-schema: 0.4.0
 
@@ -3840,6 +3897,13 @@ snapshots:
       throttleit: 2.1.0
     optionalDependencies:
       react: 19.0.0-rc-45804af1-20241021
+      zod: 3.23.8
+
+  '@ai-sdk/togetherai@0.2.1(zod@3.23.8)':
+    dependencies:
+      '@ai-sdk/openai-compatible': 0.2.1(zod@3.23.8)
+      '@ai-sdk/provider': 1.1.0
+      '@ai-sdk/provider-utils': 2.2.1(zod@3.23.8)
       zod: 3.23.8
 
   '@ai-sdk/ui-utils@1.1.15(zod@3.23.8)':
@@ -6658,6 +6722,14 @@ snapshots:
 
   obuf@1.1.2: {}
 
+  ollama-ai-provider@1.2.0(zod@3.23.8):
+    dependencies:
+      '@ai-sdk/provider': 1.0.8
+      '@ai-sdk/provider-utils': 2.1.9(zod@3.23.8)
+      partial-json: 0.1.7
+    optionalDependencies:
+      zod: 3.23.8
+
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -6699,6 +6771,8 @@ snapshots:
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
       is-hexadecimal: 2.0.1
+
+  partial-json@0.1.7: {}
 
   path-exists@4.0.0: {}
 
@@ -6779,7 +6853,7 @@ snapshots:
 
   postcss@8.4.31:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
 

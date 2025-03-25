@@ -15,11 +15,14 @@
     "db:push": "drizzle-kit push",
     "db:pull": "drizzle-kit pull",
     "db:check": "drizzle-kit check",
-    "db:up": "drizzle-kit up"
+    "db:up": "drizzle-kit up",
+    "ai:run": "pnpm run ai:run:local",
+    "ai:run:local": "ollama run deepseek-r1:latest && journalctl -u ollama --no-pager -f"
   },
   "dependencies": {
     "@ai-sdk/fireworks": "^0.1.8",
     "@ai-sdk/openai": "1.1.9",
+    "@ai-sdk/togetherai": "^0.2.1",
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/lang-python": "^6.1.6",
     "@codemirror/state": "^6.5.0",
@@ -56,6 +59,7 @@
     "next": "15.0.3-canary.2",
     "next-auth": "5.0.0-beta.25",
     "next-themes": "^0.3.0",
+    "ollama-ai-provider": "^1.2.0",
     "orderedmap": "^2.1.1",
     "papaparse": "^5.5.2",
     "postgres": "^3.4.4",
